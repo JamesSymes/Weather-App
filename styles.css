@@ -1,0 +1,90 @@
+/* Apply 'box-sizing: border-box' to every element. This means the padding and border of an element no longer increase its width */
+* {
+  box-sizing: border-box;         /* Controls how the total width and height of an element is calculated */
+}
+
+/* Styles for the body element. Sets font, color, alignment, and margin of the body, and sets a minimum height to cover the entire viewport height */
+body {
+  background-image: url('https://i.gifer.com/XFbw.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Remaining body css... */
+  font-family: Arial, sans-serif; /* Specifies the typeface to use */
+  color: white;                   /* Sets the text color */
+  display: flex;                  /* Specifies the type of rendering box, flex for flexible box layout */
+  justify-content: center;        /* Defines how to align items along the horizontal axis */
+  align-items: center;            /* Defines how to align items along the vertical axis */
+  min-height: 100vh;              /* Minimum height is set to 100% of the viewport height */
+  margin: 0;                      /* No outside space around the body */
+  background-color: #F5F5F5;      /* Sets the background color */
+}
+
+/* Styles for the main app container. It is centered with a semi-transparent black background */
+.app {
+  text-align: center;             /* Aligns text to the center */
+  width: 100%;                    /* Sets width to 100% of parent's width */
+  max-width: 600px;               /* Limits maximum width to 600px */
+  padding: 20px;                  /* Adds 20px space around the content inside the container */
+  background-color: rgba(0, 0, 0, 0.5); /* Sets a semi-transparent black background color */
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
+
+/* Styles for the title, adding a bottom margin */
+.title {
+  margin-bottom: 20px;            /* Sets space below the title */
+}
+
+/* Styles for the search bar, which is a flex container aligning its children in a row and distributing them evenly */
+.search-bar {
+  display: flex;                  /* Specifies the type of rendering box, flex for flexible box layout */
+  justify-content: space-between; /* Space out items evenly along the horizontal axis */
+  margin-bottom: 20px;            /* Sets space below the search bar */
+}
+
+/* Styles for the location input field, allowing it to grow as needed, adding padding, and styling its appearance */
+#location-input {
+  flex-grow: 1;                   /* Allows the input to take up remaining space in the flex container */
+  padding: 10px;                  /* Adds space inside the input field */
+  border: none;                   /* Removes the border from the input field */
+  border-radius: 5px;             /* Makes the corners of the input field rounded */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* Adds a subtle shadow for a modern look */
+  margin-right: 10px;             /* Adds some space on the right of the input field */
+}
+
+/* Styles for the 'Get Weather' button, including padding, color, and appearance */
+#get-weather-btn {
+  padding: 10px 20px;             /* Adds space inside the button */
+  border: none;                   /* Removes the default border */
+  border-radius: 5px;             /* Adds rounded corners to the button */
+  background-color: #007BFF;      /* Applies a blue background color to the button */
+  color: white;                   /* Makes the button text white */
+  cursor: pointer;                /* Changes the cursor to a hand when hovering over the button */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* Adds a subtle shadow for a modern look */
+}
+
+/* Styles for the hover state of the 'Get Weather' button */
+#get-weather-btn:hover {
+  background-color: #0056b3;      /* Darkens the button color slightly when hovering over it */
+}
+
+/* Styles for the container that holds the weather info. Initially hidden */
+#weather-info {
+  display: none;                  /* Initially, the weather info is hidden */
+  font-size: 18px;                /* Sets the font size for the weather info */
+}
+
+/* Styles for the active state of the weather info container */
+#weather-info.active {
+  display: block;                 /* When active, the weather info is shown */
+}
+
+/* Styles for the element that displays the temperature, making the font larger */
+#temperature {
+  font-size: 50px;                /* Sets a larger font size for the temperature */
+}
+
+/* Styles for the element that displays the weather description, also making the font larger */
+#description {
+  font-size: 22px;                /* Sets a larger font size for the weather description */
+}
+
